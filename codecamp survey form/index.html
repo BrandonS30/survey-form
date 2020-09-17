@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<main>
+
+    <head>
+        <link rel="stylesheet" href="stylesheet.css">
+        <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <h1 id="title" class="header">Gaming Experience Survey Form</h1>
+            <p id="description" class="description">Tell us about your experience as a gamer</p>
+
+            <form id="survey-form">
+                <div class="form-item">
+                    <label id="name-label" for="name">Name:</label>
+                    <input id="name" type="text" name="name" placeholder="Enter Your Name" required>
+                </div>
+                <div class="form-item">
+                    <label id="email-label" for="email">Email:</label>
+                    <input id="email" type="email" name="email" placeholder="Enter Your Email" required>
+                </div>
+                <div class="form-item">
+                    <label id="number-label" for="number">What age did you begin gaming?</label>
+                    <input id="number" min="1" max="50" class="form-control" type="number" name="age" placeholder="Age" required>
+                </div>
+                <div class="form-item">
+                    <p>Which platform do you use most often?(Choose one)</p>
+                    <select id="dropdown" name="platform-used" class="form-control" required>
+                    <option disabled selected value>Please select favorite platform</option>
+                    <option value="pc">PC</option>
+                    <option value="xbox">Xbox</option>
+                    <option value="playstation">Playstation</option>
+                    <option value="nintendo">Nintendo</option>
+                    <option value="mobile">Mobile</option>
+                    <option value="vr">Virtual Reality</option>
+                    <option value="other">Other</option>
+                </select>
+                </div>
+                <div class="form-item">
+                    <p>How often do you play games?(Choose one)</p>
+                    <br>
+                    <input type="radio" name="frequency" value="more than enough" class="radio-button"> "More than enough"<br>
+                    <input type="radio" name="frequency" value="very often" class="radio-button"> "Very often"<br>
+                    <input type="radio" name="frequency" value="sometimes" class="radio-button" checked> "Sometimes"<br>
+                    <input type="radio" name="frequency" value="almost never" class="radio-button"> "Almost never"<br>
+                    <p>What genres do you play most?(Check all that apply)</p>
+                    <input type="checkbox" name="genre" value="rpg" class="check">Role-Playing<br>
+                    <input type="checkbox" name="genre" value="puzzle" class="check">Puzzle Games<br>
+                    <input type="checkbox" name="genre" value="first-person shooter" class="check">First Person Shooters<br>
+                    <input type="checkbox" name="genre" value="sandbox" class="check">Sandbox<br>
+                    <input type="checkbox" name="genre" value="racing" class="check">Racing<br>
+                    <input type="checkbox" name="genre" value="simulation" class="check">Simulation<br>
+                    <input type="checkbox" name="genre" value="strategy" class="check">Strategy<br>
+                    <input type="checkbox" name="genre" value="other" class="check">Other<br>
+                    <textarea placeholder="Additional Comments"></textarea><br>
+                    <input id="submit" type="submit"><br>
+                </div>
+            </form>
+        </div>
+    </body>
+</main>
+
+</html>

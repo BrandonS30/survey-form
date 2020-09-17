@@ -1,0 +1,38 @@
+body {
+    background-size: contain;
+    background-image: url(http://www.fond-ecran.net/fonds/pac_man_003.jpg);
+    display: block;
+    font-family: sans-serif;
+    text-align: center;
+    padding-bottom: 10px;
+    background-position: center;
+    background-repeat: repeat-y;
+    color: ivory;
+    font-size: 25px;
+}
+
+main {
+    background-color: midnightblue;
+    opacity: 0.8;
+    border: 5px, ivory;
+}
+
+#title {
+    font-family: fantasy;
+    font-weight: bolder;
+    font-size: 40px;
+    background-color: navy;
+    text-shadow: black;
+}
+
+input {
+    display: block;
+    padding-bottom: 10px;
+    text-align: center;
+    margin: auto;
+}
+
+.form-item {
+    display: block;
+    width: 100%;
+}
